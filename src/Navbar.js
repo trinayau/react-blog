@@ -1,14 +1,15 @@
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <nav className="navbar">
             <h1>Trina's Tech Blog</h1>
             <div className="links">
-                <a href="/">Home</a>
-                <a href="/create" style={{ 
+            <NavLink to="/">Home</NavLink>
+                <NavLink to="/create" style={{ 
           color: 'white', 
           backgroundColor: '#f1356d',
           borderRadius: '8px' 
-        }}>New Blog</a>
+        }}>New Blog</NavLink>
             </div>
         </nav>
      );
